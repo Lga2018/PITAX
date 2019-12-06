@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{412F78BE-421C-42A8-944B-94B072AE2F92}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PITAX</RootNamespace>
+    <AssemblyName>PITAX</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>C:\Users\liga\Desktop\Net40\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL" />
+    <Reference Include="NPOI">
+      <HintPath>C:\Users\liga\Desktop\Net40\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>C:\Users\liga\Desktop\Net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>C:\Users\liga\Desktop\Net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>C:\Users\liga\Desktop\Net40\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin\user_add.aspx" />
+    <Content Include="admin\user_add1.aspx" />
+    <Content Include="admin\user_edit.aspx" />
+    <Content Include="admin\user_list.aspx" />
+    <Content Include="ajaxServer.aspx" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font.css" />
+    <Content Include="css\style.css" />
+    <Content Include="error.htm" />
+    <Content Include="fonts\iconfont.svg" />
+    <Content Include="gsjs_list.aspx" />
+    <Content Include="gzmx_list.aspx" />
+    <Content Include="gzmx_upload.aspx" />
+    <Content Include="images\aiwrap.png" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\loginBg.jpg" />
+    <Content Include="images\logo_100.png" />
+    <Content Include="index.aspx" />
+    <Content Include="js\cookie.js" />
+    <Content Include="js\xadmin.js" />
+    <Content Include="js\xcity.js" />
+    <Content Include="lib\layui\layui.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="login1.aspx" />
+    <Content Include="plugins\font-awesome\css\font-awesome-ie7.css" />
+    <Content Include="plugins\font-awesome\css\font-awesome-ie7.min.css" />
+    <Content Include="plugins\font-awesome\css\font-awesome.css" />
+    <Content Include="plugins\font-awesome\css\font-awesome.min.css" />
+    <Content Include="plugins\font-awesome\font\fontawesome-webfont.svg" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="useraddajax.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebService.asmx" />
+    <Content Include="welcome.aspx" />
+    <Content Include="zxkc_add.aspx" />
+    <Content Include="zxkc_list.aspx" />
+    <Content Include="zxkc_upload.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin\user_add.aspx.cs">
+      <DependentUpon>user_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\user_add.aspx.designer.cs">
+      <DependentUpon>user_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\user_add1.aspx.cs">
+      <DependentUpon>user_add1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\user_add1.aspx.designer.cs">
+      <DependentUpon>user_add1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\user_edit.aspx.cs">
+      <DependentUpon>user_edit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\user_edit.aspx.designer.cs">
+      <DependentUpon>user_edit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin\user_list.aspx.cs">
+      <DependentUpon>user_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin\user_list.aspx.designer.cs">
+      <DependentUpon>user_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ajaxServer.aspx.cs">
+      <DependentUpon>ajaxServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ajaxServer.aspx.designer.cs">
+      <DependentUpon>ajaxServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="gsjs_list.aspx.cs">
+      <DependentUpon>gsjs_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gsjs_list.aspx.designer.cs">
+      <DependentUpon>gsjs_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gzmx_list.aspx.cs">
+      <DependentUpon>gzmx_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gzmx_list.aspx.designer.cs">
+      <DependentUpon>gzmx_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gzmx_upload.aspx.cs">
+      <DependentUpon>gzmx_upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gzmx_upload.aspx.designer.cs">
+      <DependentUpon>gzmx_upload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HandlerLogin.ashx.cs">
+      <DependentUpon>HandlerLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\HandlerLogin.ashx.cs">
+      <DependentUpon>HandlerLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handler\HandlerUserAdd.ashx.cs">
+      <DependentUpon>HandlerUserAdd.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login1.aspx.cs">
+      <DependentUpon>login1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login1.aspx.designer.cs">
+      <DependentUpon>login1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="useraddajax.aspx.cs">
+      <DependentUpon>useraddajax.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="useraddajax.aspx.designer.cs">
+      <DependentUpon>useraddajax.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService.asmx.cs">
+      <DependentUpon>WebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="welcome.aspx.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="welcome.aspx.designer.cs">
+      <DependentUpon>welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zxkc_add.aspx.cs">
+      <DependentUpon>zxkc_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zxkc_add.aspx.designer.cs">
+      <DependentUpon>zxkc_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zxkc_list.aspx.cs">
+      <DependentUpon>zxkc_list.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zxkc_list.aspx.designer.cs">
+      <DependentUpon>zxkc_list.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="zxkc_upload.aspx.cs">
+      <DependentUpon>zxkc_upload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="zxkc_upload.aspx.designer.cs">
+      <DependentUpon>zxkc_upload.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="excel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fonts\iconfont.eot" />
+    <None Include="fonts\iconfont.ttf" />
+    <None Include="fonts\iconfont.woff" />
+    <Content Include="HandlerLogin.ashx" />
+    <Content Include="Handler\HandlerLogin.ashx" />
+    <Content Include="Handler\HandlerUserAdd.ashx" />
+    <None Include="plugins\font-awesome\font\fontawesome-webfont.eot" />
+    <None Include="plugins\font-awesome\font\fontawesome-webfont.ttf" />
+    <None Include="plugins\font-awesome\font\fontawesome-webfont.woff" />
+    <None Include="plugins\font-awesome\font\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{AE4AB9CC-156C-4362-BF1C-2F2365212963}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{57302AD2-20E2-48D3-A12F-052E0B405C45}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DBUtility\DBUtility.csproj">
+      <Project>{2B6B8532-EA87-4470-93C8-35F75D20E106}</Project>
+      <Name>DBUtility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{A1BC6E04-B545-4735-A259-52093DD04F80}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>11880</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
